@@ -51,7 +51,7 @@ export default function Layout({ children }) {
           zIndex: -1,
         }}
       />
-      <main className="pt-12 px-6 md:px-96 text-white mb-12 grid gap-24">
+      <main className="pt-12  justify-center max-w-4xl text-white mb-12 grid gap-24">
         {children}
       </main>
     </>

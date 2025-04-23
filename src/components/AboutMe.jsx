@@ -1,6 +1,4 @@
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 export default function AboutMe() {
   const settings = {
@@ -38,13 +36,14 @@ export default function AboutMe() {
         </div>
       </div>
       <div className="flex flex-col">
+        <h3 className="text-4xl pb-6">Mine Biler</h3>
         <p className="mr-6">
-          Mine Biler. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Fuga ducimus odio, tempora officiis quos excepturi. Fugit cupiditate
-          sit soluta id distinctio aliquam sed non, atque, minus sapiente ex!
-          Autem, fuga.
+          For øyeblikket har jeg to biler. Det er en 1994 Bmw e36 325i og en
+          2010 Bmw f10 525d. E36'n har jeg hatt siden 2018 og var første egen
+          eide bil. E36'n er en manuell cabriolet som brukes som sommerbil og
+          gir meg en god følse av 90tallet (noe jeg ikke har opplevd).
         </p>
-        <Slider {...settings} className="w-200 max-w-4xl mx-auto">
+        {/* <Slider {...settings} className="max-w-4xl">
           {images.map((src, index) => (
             <div key={index} className="px-2">
               <img
@@ -54,7 +53,7 @@ export default function AboutMe() {
               />
             </div>
           ))}
-        </Slider>
+        </Slider> */}
       </div>
     </div>
   );

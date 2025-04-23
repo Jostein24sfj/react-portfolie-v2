@@ -19,7 +19,7 @@ export default function SkillsBar() {
     <div className="skills-bar">
       <div className="skills-marquee">
         <div className="skills-track">
-          {[...icons, ...icons].map((icon, index) => (
+          {[...icons, ...icons, ...icons, ...icons].map((icon, index) => (
             <span key={index} className="icon">
               {icon}
             </span>

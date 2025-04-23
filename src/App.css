@@ -39,7 +39,7 @@ body {
 
 .skills-track {
   display: flex;
-  animation: scroll-marquee 20s linear infinite;
+  animation: scroll-marquee 50s linear infinite;
 }
 
 .icon {
