@@ -16,11 +16,15 @@ const icons = [
 
 export default function SkillsBar() {
   return (
-    <div className="overflow-hidden whitespace-nowrap w-full py-4">
-      <div className="animate-scroll flex gap-30 text-6xl items-center">
-        {icons.concat(icons).map((icon, index) => (
-          <span key={index}>{icon}</span>
-        ))}
+    <div className="skills-bar">
+      <div className="skills-marquee">
+        <div className="skills-track">
+          {[...icons, ...icons].map((icon, index) => (
+            <span key={index} className="icon">
+              {icon}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   );
