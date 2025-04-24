@@ -9,8 +9,8 @@ export default function Projects() {
           Recent Projects
         </h3>
       </div>
-      <section className="flex gap-8 md:gap-24 ">
-        <section className="flex flex-col w-86 h-74 rounded-xl p-6 bg-gradient-to-b from-black/50 to-zinc-400/30 from-80%">
+      <section className="flex items-center justify-center flex-col gap-8 md:gap-24 py-24">
+        <div className="flex flex-col w-76 md:w-86 h-74 rounded-xl p-6 bg-gradient-to-b from-black/50 to-zinc-400/30 from-80%">
           <img
             className="flex rounded-xl"
             src="/gymTracker.png"
@@ -26,8 +26,8 @@ export default function Projects() {
           <p className="pt-4">
             En nettside hvor du kan se og følge opp treningen din.
           </p>
-        </section>
-        <section className="flex flex-col w-86 h-74 rounded-xl p-6 bg-gradient-to-b from-black/50 to-zinc-400/30 from-80%">
+        </div>
+        <div className="flex flex-col w-76 md:w-86 h-74 rounded-xl p-6 bg-gradient-to-b from-black/50 to-zinc-400/30 from-80%">
           <img
             className="flex rounded-xl"
             src="/onScrollTestPage.png"
@@ -43,7 +43,7 @@ export default function Projects() {
           <p className="pt-4">
             En nettside hvor lysene på bilen skrur seg på ved scroll.
           </p>
-        </section>
+        </div>
       </section>
 
       <Link to="/projects">

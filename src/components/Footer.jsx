@@ -10,7 +10,7 @@ export default function Footer() {
       <div id="footer">
         <div className="bg-zinc-800/50 p-12">
           <div className="flex justify-center">
-            <div className="flex gap-8 text-5xl">
+            <div className="flex flex-wrap justify-center gap-8 text-5xl">
               <a
                 className="hover:text-yellow-300"
                 target="_blank"

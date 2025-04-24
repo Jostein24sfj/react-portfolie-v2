@@ -13,8 +13,14 @@ export default function App() {
       <Header />
       <Layout>
         <Routes>
-          <Route index element={<AppContent />} />
-          <Route path="/projects" element={<AllProjects />} />
+          <Route
+            index
+            element={<AppContent />}
+          />
+          <Route
+            path="/projects"
+            element={<AllProjects />}
+          />
         </Routes>
       </Layout>
       <Footer />

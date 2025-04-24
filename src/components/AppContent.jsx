@@ -19,7 +19,7 @@ export default function AppContent() {
 
   return (
     <>
-      <section className="flex flex-row">
+      <section className="flex md:flex-row flex-col items-center justify-center">
         <img
           className="w-34 h-34 rounded-full border-4 border-zinc-400 p-1"
           src="/IMG_22552.png"

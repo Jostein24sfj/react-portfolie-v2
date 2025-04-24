@@ -28,10 +28,14 @@ export default function Layout({ children }) {
 
     createHeader();
 
+    let resizeTimeout;
     const handleResize = () => {
-      const oldCanvas = document.querySelector(".finisher-canvas");
-      if (oldCanvas) oldCanvas.remove();
-      createHeader();
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => {
+        const oldCanvas = document.querySelector(".finisher-canvas");
+        if (oldCanvas) oldCanvas.remove();
+        createHeader();
+      }, 300); // vent 300ms etter siste resize
     };
 
     window.addEventListener("resize", handleResize);
@@ -51,7 +55,7 @@ export default function Layout({ children }) {
           zIndex: -1,
         }}
       />
-      <main className="pt-12 px-6 md:px-96 text-white mb-12 grid gap-24">
+      <main className="pt-12 text-white px-4 mb-12 flex flex-col gap-24 overflow-x-hidden">
         {children}
       </main>
     </>
