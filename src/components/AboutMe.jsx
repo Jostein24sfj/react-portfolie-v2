@@ -21,7 +21,7 @@ export default function AboutMe() {
 
   return (
     <div className="flex flex-col gap-24">
-      <div className="flex items-center flex-col md:flex-row gap-10">
+      <div className="flex gap-10 md:flex-row flex-col items-center justify-center">
         <img
           className="w-54 rounded-2xl"
           src="/profilBilde.jpg"
@@ -44,15 +44,11 @@ export default function AboutMe() {
           sit soluta id distinctio aliquam sed non, atque, minus sapiente ex!
           Autem, fuga.
         </p>
-        <Slider
-          {...settings}
-          className="w-200 max-w-4xl mx-auto">
+        <Slider {...settings} className="w-200 max-w-4xl mx-auto">
           {images.map((src, index) => (
-            <div
-              key={index}
-              className="px-2">
+            <div key={index} className="px-2">
               <img
-                className="rounded-2xl w-full h-80 object-cover"
+                className="rounded-2xl w-full h-80 object-cover border"
                 src={src}
                 alt={`Slide ${index + 1}`}
               />

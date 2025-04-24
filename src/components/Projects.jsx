@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 export default function Projects() {
   return (
     <>
-      <div className="pb-4">
+      <div className="">
         <h3 className="flex bg-zinc-400/30 w-31 p-1 rounded text-zinc-300">
           Recent Projects
         </h3>
       </div>
-      <section className="flex items-center justify-center flex-col gap-8 md:gap-24 py-24">
+      <section className="flex items-center justify-between pt-6">
         <div className="flex flex-col w-76 md:w-86 h-74 rounded-xl p-6 bg-gradient-to-b from-black/50 to-zinc-400/30 from-80%">
           <img
             className="flex rounded-xl"
@@ -47,7 +47,7 @@ export default function Projects() {
       </section>
 
       <Link to="/projects">
-        <button className="flex justify-center items-center hover:scale-105 cursor-pointer pt-2">
+        <button className="flex justify-center items-center hover:scale-105 cursor-pointer pt-6">
           More Projects{" "}
           <IoIosArrowRoundForward className="flex items-center justify-center text-3xl" />
         </button>

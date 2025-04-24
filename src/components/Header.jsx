@@ -7,27 +7,29 @@ export default function Header() {
   return (
     <>
       <div
-        className="flex justify-end items-center py-8 px-4 sm:px-12 md:px-24 gap-4 md:gap-10
+        className="flex justify-end items-center py-8 px-4 md:px-86 
       text-2xl">
-        <Link to="/">
-          <button className="text-base md:text-lg flex hover:scale-105 cursor-pointer">
-            home
+        <div className="flex gap-4 md:gap-10 max-w-xl">
+          <Link to="/">
+            <button className="text-base md:text-lg flex hover:scale-105 cursor-pointer">
+              home
+            </button>
+          </Link>
+          <button
+            onClick={scrollToFooter}
+            className="text-base md:text-lg flex hover:scale-105 cursor-pointer">
+            socials
           </button>
-        </Link>
-        <button
-          onClick={scrollToFooter}
-          className="text-base md:text-lg flex hover:scale-105 cursor-pointer">
-          socials
-        </button>
-        <Link to="/projects">
-          <button className="text-base md:text-lg flex hover:scale-105 cursor-pointer">
-            projects
-          </button>
-        </Link>
+          <Link to="/projects">
+            <button className="text-base md:text-lg flex hover:scale-105 cursor-pointer">
+              projects
+            </button>
+          </Link>
 
-        <button className="text-base md:text-lg flex hover:scale-105 cursor-pointer">
-          about me
-        </button>
+          <button className="text-base md:text-lg flex hover:scale-105 cursor-pointer">
+            about me
+          </button>
+        </div>
       </div>
     </>
   );
