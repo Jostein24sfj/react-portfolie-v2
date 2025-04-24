@@ -4,39 +4,39 @@ import { Outlet } from "react-router-dom";
 import { useEffect } from "react";
 
 export default function Layout({ children }) {
-  useEffect(() => {
-    function createHeader() {
-      if (window.FinisherHeader) {
-        new window.FinisherHeader({
-          count: 100,
-          size: { min: 2, max: 2, pulse: 0 },
-          speed: {
-            x: { min: 0.01, max: 0.1 },
-            y: { min: 0.01, max: 0.1 },
-          },
-          colors: {
-            background: "#161616",
-            particles: ["#ec003f", "#00d3f2", "#ffdf20"],
-          },
-          blending: "overlay",
-          opacity: { center: 1, edge: 0.2 },
-          skew: 0,
-          shapes: ["c"],
-        });
-      }
-    }
+  // useEffect(() => {
+  //   function createHeader() {
+  //     if (window.FinisherHeader) {
+  //       new window.FinisherHeader({
+  //         count: 100,
+  //         size: { min: 2, max: 2, pulse: 0 },
+  //         speed: {
+  //           x: { min: 0.01, max: 0.1 },
+  //           y: { min: 0.01, max: 0.1 },
+  //         },
+  //         colors: {
+  //           background: "#161616",
+  //           particles: ["#ec003f", "#00d3f2", "#ffdf20"],
+  //         },
+  //         blending: "overlay",
+  //         opacity: { center: 1, edge: 0.2 },
+  //         skew: 0,
+  //         shapes: ["c"],
+  //       });
+  //     }
+  //   }
 
-    createHeader();
+  //   createHeader();
 
-    const handleResize = () => {
-      const oldCanvas = document.querySelector(".finisher-canvas");
-      if (oldCanvas) oldCanvas.remove();
-      createHeader();
-    };
+  //   const handleResize = () => {
+  //     const oldCanvas = document.querySelector(".finisher-canvas");
+  //     if (oldCanvas) oldCanvas.remove();
+  //     createHeader();
+  //   };
 
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  //   window.addEventListener("resize", handleResize);
+  //   return () => window.removeEventListener("resize", handleResize);
+  // }, []);
 
   return (
     <>
@@ -51,7 +51,7 @@ export default function Layout({ children }) {
           zIndex: -1,
         }}
       />
-      <main className="pt-12  justify-center max-w-4xl text-white mb-12 grid gap-24">
+      <main className="pt-12 justify-center max-w-4xl text-white mb-12 grid gap-24">
         {children}
       </main>
     </>

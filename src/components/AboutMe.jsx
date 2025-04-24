@@ -19,7 +19,7 @@ export default function AboutMe() {
 
   return (
     <div className="flex flex-col gap-24">
-      <div className="flex gap-10">
+      <div className="flex gap-10 justify-center items-center">
         <img
           className="w-54 rounded-2xl"
           src="/profilBilde.jpg"
@@ -37,23 +37,29 @@ export default function AboutMe() {
       </div>
       <div className="flex flex-col">
         <h3 className="text-4xl pb-6">Mine Biler</h3>
-        <p className="mr-6">
+        <p className="mr-6 pb-6">
           For øyeblikket har jeg to biler. Det er en 1994 Bmw e36 325i og en
           2010 Bmw f10 525d. E36'n har jeg hatt siden 2018 og var første egen
           eide bil. E36'n er en manuell cabriolet som brukes som sommerbil og
           gir meg en god følse av 90tallet (noe jeg ikke har opplevd).
         </p>
-        {/* <Slider {...settings} className="max-w-4xl">
-          {images.map((src, index) => (
-            <div key={index} className="px-2">
-              <img
-                className="rounded-2xl w-full h-80 object-cover"
-                src={src}
-                alt={`Slide ${index + 1}`}
-              />
-            </div>
-          ))}
-        </Slider> */}
+        <div>
+          <div className="flex justify-center">
+            <Slider
+              {...settings}
+              className="flex justify-center items-center max-w-4xl">
+              {images.map((src, index) => (
+                <div key={index} className="px-2">
+                  <img
+                    className="rounded-2xl w-70 h-80 object-cover"
+                    src={src}
+                    alt={`Slide ${index + 1}`}
+                  />
+                </div>
+              ))}
+            </Slider>
+          </div>
+        </div>
       </div>
     </div>
   );

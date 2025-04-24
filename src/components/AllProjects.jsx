@@ -49,7 +49,7 @@ export default function AllProjects() {
               className="flex pt-1 font-medium text-2xl cursor-pointer hover:scale-105"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://tailwind-first-test-project.vercel.app/">
+              href="https://restaurantmenyen.vercel.app/">
               Restaurantmenyen
             </a>
             <p className="pt-4">

@@ -5,12 +5,12 @@ export default function Projects() {
   return (
     <>
       <div className="flex flex-col justify-center">
-        <div className="pb-4">
+        <div className="pb-4 pl-14">
           <h3 className="flex bg-zinc-400/30 w-31 p-1 rounded text-zinc-300">
             Recent Projects
           </h3>
         </div>
-        <section className="flex gap-8 md:gap-24 ">
+        <section className="flex gap-8 md:gap-24 justify-center">
           <section className="flex flex-col w-86 h-74 rounded-xl p-6 bg-gradient-to-b from-black/50 to-zinc-400/30 from-80%">
             <img
               className="flex rounded-xl"
@@ -48,8 +48,8 @@ export default function Projects() {
         </section>
 
         <Link to="/projects">
-          <button className="flex justify-center items-center hover:scale-105 cursor-pointer pt-2">
-            More Projects{" "}
+          <button className="flex justify-center items-center hover:scale-105 cursor-pointer pt-2 pl-14">
+            More Projects
             <IoIosArrowRoundForward className="flex items-center justify-center text-3xl" />
           </button>
         </Link>

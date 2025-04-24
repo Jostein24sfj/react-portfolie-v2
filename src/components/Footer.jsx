@@ -8,9 +8,9 @@ export default function Footer() {
   return (
     <>
       <div id="footer" className="w-full">
-        <div className="bg-zinc-700/70 p-12 w-full">
+        <div className="bg-zinc-700/30 p-12 w-full">
           <div className="">
-            <div className="flex gap-8 text-5xl">
+            <div className="flex justify-center gap-8 text-5xl">
               <a
                 className="hover:text-yellow-300"
                 target="_blank"
