@@ -10,9 +10,9 @@ export default function Projects() {
         </h3>
       </div>
       <section className="flex flex-col md:flex-row items-center justify-between pt-6 gap-10">
-        <div className="flex flex-col w-96 md:w-86 h-74 rounded-xl p-6 bg-gradient-to-b from-black/40 to-zinc-800 from-85% hover:bg-zinc-700 border-zinc-500 border">
+        <div className="flex flex-col w-96 md:w-86 h-74 rounded-xl p-6 bg-gradient-to-b from-black/40 to-zinc-800 from-85% hover:bg-zinc-800 border-zinc-400/20 border-2">
           <img
-            className="flex rounded-xl"
+            className="flex rounded-xl border-zinc-400/20 border-2 opacity-90"
             src="/gymTracker.png"
             alt="bilde av en gym nettside"
           />
@@ -27,9 +27,9 @@ export default function Projects() {
             En nettside hvor du kan se og følge opp treningen din.
           </p>
         </div>
-        <div className="flex flex-col w-96 md:w-86 h-74 rounded-xl p-6 bg-gradient-to-b from-black/40 to-zinc-800 from-85% hover:bg-zinc-700">
+        <div className="flex flex-col w-96 md:w-86 h-74 rounded-xl p-6 bg-gradient-to-b from-black/40 to-zinc-800 from-85% hover:bg-zinc-800 border-zinc-400/20 border-2">
           <img
-            className="flex rounded-xl"
+            className="flex rounded-xl border-zinc-400/20 border-2 opacity-90"
             src="/onScrollTestPage.png"
             alt="bilde av bil nettsiden"
           />

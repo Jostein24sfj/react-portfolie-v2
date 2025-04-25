@@ -21,7 +21,7 @@ export default function AppContent() {
     <>
       <section className="flex md:flex-row flex-col items-center justify-start">
         <img
-          className="w-38 h-38 rounded-full border-4 border-zinc-400 p-1"
+          className="w-38 h-38 rounded-full border-2 border-zinc-400/30 p-1"
           src="/IMG_22552.png"
           alt=""
         />

@@ -13,10 +13,10 @@ export default function Layout({ children }) {
 
     new window.FinisherHeader({
       count: 100,
-      size: { min: 2, max: 2, pulse: 0 },
+      size: { min: 2, max: 3, pulse: 0 },
       speed: {
-        x: { min: 0.01, max: 0.1 },
-        y: { min: 0.01, max: 0.1 },
+        x: { min: 0.02, max: 0.2 },
+        y: { min: 0.02, max: 0.2 },
       },
       colors: {
         background: "#161616",

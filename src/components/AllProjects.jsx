@@ -4,8 +4,8 @@ export default function AllProjects() {
       <section className="text-white p-8 min-h-screen">
         <h1 className="text-4xl font-bold mb-4 pb-18">All Projects</h1>
 
-        <section className="grid grid-cols-2 gap-8 md:gap-24 ">
-          <section className="flex flex-col w-86 h-74 rounded-xl p-6 bg-gradient-to-b from-black/50 to-zinc-400/30 from-80%">
+        <section className="flex flex-col flex-wrap md:flex-row items-center justify-between pt-6 gap-10">
+          <section className="flex flex-col w-96 md:w-86 h-74 rounded-xl p-6 bg-gradient-to-b from-black/40 to-zinc-800 from-85% hover:bg-zinc-800 border-zinc-400/20 border-2">
             <img
               className="flex rounded-xl"
               src="/gymTracker.png"
@@ -22,7 +22,7 @@ export default function AllProjects() {
               En nettside hvor du kan se og følge opp treningen din.
             </p>
           </section>
-          <section className="flex flex-col w-86 h-74 rounded-xl p-6 bg-gradient-to-b from-black/50 to-zinc-400/30 from-80%">
+          <section className="flex flex-col w-96 md:w-86 h-74 rounded-xl p-6 bg-gradient-to-b from-black/40 to-zinc-800 from-85% hover:bg-zinc-800 border-zinc-400/20 border-2">
             <img
               className="flex rounded-xl"
               src="/onScrollTestPage.png"
@@ -39,7 +39,7 @@ export default function AllProjects() {
               En nettside hvor lysene på bilen skrur seg på ved scroll.
             </p>
           </section>
-          <section className="flex flex-col w-86 h-74 rounded-xl p-6 bg-gradient-to-b from-black/50 to-zinc-400/30 from-80%">
+          <section className="flex flex-col w-96 md:w-86 h-74 rounded-xl p-6 bg-gradient-to-b from-black/40 to-zinc-800 from-85% hover:bg-zinc-800 border-zinc-400/20 border-2">
             <img
               className="flex rounded-xl"
               src="/restaurantMenyen.png"
@@ -57,7 +57,7 @@ export default function AllProjects() {
               matretter deretter.
             </p>
           </section>
-          <section className="flex flex-col w-86 h-74 rounded-xl p-6 bg-gradient-to-b from-black/50 to-zinc-400/30 from-80%">
+          <section className="flex flex-col w-96 md:w-86 h-74 rounded-xl p-6 bg-gradient-to-b from-black/40 to-zinc-800 from-85% hover:bg-zinc-800 border-zinc-400/20 border-2">
             <img
               className="flex rounded-xl"
               src="/RPGBoardgame.png"
