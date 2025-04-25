@@ -5,53 +5,51 @@ import { useEffect } from "react";
 
 export default function Layout({ children }) {
   useEffect(() => {
-    let resizeTimeout;
+    // let resizeTimeout;
 
-    const createHeader = () => {
-      const existingCanvas = document.querySelector(".finisher-canvas");
-      if (existingCanvas) return;
+    // const createHeader = () => {
+    // const existingCanvas = document.querySelector(".finisher-canvas");
+    // if (existingCanvas) return;
 
-      if (window.FinisherHeader) {
-        new window.FinisherHeader({
-          count: 100,
-          size: { min: 2, max: 2, pulse: 0 },
-          speed: {
-            x: { min: 0.01, max: 0.1 },
-            y: { min: 0.01, max: 0.1 },
-          },
-          colors: {
-            background: "#161616",
-            particles: ["#ec003f", "#00d3f2", "#ffdf20"],
-          },
-          blending: "overlay",
-          opacity: { center: 1, edge: 0.2 },
-          skew: 0,
-          shapes: ["c"],
-        });
-      }
-    };
+    new window.FinisherHeader({
+      count: 100,
+      size: { min: 2, max: 2, pulse: 0 },
+      speed: {
+        x: { min: 0.01, max: 0.1 },
+        y: { min: 0.01, max: 0.1 },
+      },
+      colors: {
+        background: "#161616",
+        particles: ["#ec003f", "#00d3f2", "#ffdf20"],
+      },
+      blending: "overlay",
+      opacity: { center: 1, edge: 0.2 },
+      skew: 0,
+      shapes: ["c"],
+    });
+    // }
 
-    const handleActualResize = () => {
-      const oldCanvas = document.querySelector(".finisher-canvas");
-      if (oldCanvas) oldCanvas.remove();
-      createHeader();
-    };
+    // const handleActualResize = () => {
+    //   const oldCanvas = document.querySelector(".finisher-canvas");
+    //   if (oldCanvas) oldCanvas.remove();
+    //   createHeader();
+    // };
 
-    const handleResize = () => {
-      clearTimeout(resizeTimeout);
-      resizeTimeout = setTimeout(() => {
-        handleActualResize();
-      }, 500);
-    };
+    // const handleResize = () => {
+    //   clearTimeout(resizeTimeout);
+    //   resizeTimeout = setTimeout(() => {
+    //     handleActualResize();
+    //   }, 500);
+    // };
 
-    createHeader();
-    window.addEventListener("resize", handleResize);
+    // createHeader();
+    // window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-      const oldCanvas = document.querySelector(".finisher-canvas");
-      if (oldCanvas) oldCanvas.remove();
-    };
+    // return () => {
+    // window.removeEventListener("resize", handleResize);
+    //   const oldCanvas = document.querySelector(".finisher-canvas");
+    //   if (oldCanvas) oldCanvas.remove();
+    // };
   }, []);
 
   return (
@@ -62,8 +60,8 @@ export default function Layout({ children }) {
           position: "fixed",
           top: 0,
           left: 0,
-          width: "100vw",
-          height: "100vh",
+          width: "2000px",
+          height: "2000px",
           zIndex: -1,
         }}
       />
