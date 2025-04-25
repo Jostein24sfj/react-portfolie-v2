@@ -5,7 +5,12 @@ import { useEffect } from "react";
 
 export default function Layout({ children }) {
   useEffect(() => {
-    function createHeader() {
+    let resizeTimeout;
+
+    const createHeader = () => {
+      const existingCanvas = document.querySelector(".finisher-canvas");
+      if (existingCanvas) return;
+
       if (window.FinisherHeader) {
         new window.FinisherHeader({
           count: 100,
@@ -24,22 +29,29 @@ export default function Layout({ children }) {
           shapes: ["c"],
         });
       }
-    }
+    };
 
-    createHeader();
+    const handleActualResize = () => {
+      const oldCanvas = document.querySelector(".finisher-canvas");
+      if (oldCanvas) oldCanvas.remove();
+      createHeader();
+    };
 
-    let resizeTimeout;
     const handleResize = () => {
       clearTimeout(resizeTimeout);
       resizeTimeout = setTimeout(() => {
-        const oldCanvas = document.querySelector(".finisher-canvas");
-        if (oldCanvas) oldCanvas.remove();
-        createHeader();
-      }, 300); // vent 300ms etter siste resize
+        handleActualResize();
+      }, 500);
     };
 
+    createHeader();
     window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      const oldCanvas = document.querySelector(".finisher-canvas");
+      if (oldCanvas) oldCanvas.remove();
+    };
   }, []);
 
   return (
