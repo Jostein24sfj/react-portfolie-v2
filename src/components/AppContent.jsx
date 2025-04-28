@@ -1,4 +1,5 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { IoRocketOutline } from "react-icons/io5";
 import { CiLocationOn } from "react-icons/ci";
 import { GoDot } from "react-icons/go";
@@ -8,6 +9,20 @@ import AboutMe from "./AboutMe";
 
 export default function AppContent() {
   const rocketRef = useRef(null);
+  const location = useLocation();
+
+  // Use useEffect to handle the scroll logic
+  useEffect(() => {
+    // If state exists and scrollToAboutMe is true, scroll to about-me section
+    if (location.state?.scrollToAboutMe) {
+      const aboutMeSection = document.getElementById("about-me");
+      if (aboutMeSection) {
+        setTimeout(() => {
+          aboutMeSection.scrollIntoView({ behavior: "smooth" });
+        }, 500); // Slight delay to ensure the page is loaded
+      }
+    }
+  }, [location.state?.scrollToAboutMe]); // Trigger on location state change
 
   const handleRocketHover = () => {
     const rocket = rocketRef.current;
@@ -96,7 +111,7 @@ export default function AppContent() {
       <section>
         <Projects />
       </section>
-      <section>
+      <section id="about-me">
         <AboutMe />
       </section>
     </>
