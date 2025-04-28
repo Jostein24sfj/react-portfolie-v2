@@ -24,9 +24,11 @@ export default function AboutMe() {
 
   return (
     <div className="flex flex-col gap-24">
-      <div className="flex gap-10 md:flex-row flex-col items-center justify-center">
+      <div
+        id="about-me"
+        className="flex gap-10 md:flex-row flex-col items-center justify-center">
         <img
-          className="w-54 rounded-2xl hover:scale-102"
+          className="w-68 rounded-2xl hover:scale-102"
           src="/profilBilde.jpg"
           alt="bilde av meg"
         />
@@ -43,7 +45,7 @@ export default function AboutMe() {
             forskjellig, men gått mest i csgo hvor jeg er på ca 3.880 ingame
             timer, og fortnite hvor jeg nylig bikket 4k timer.
           </p>
-          <p className="text-lg">
+          <p className="text-lg pt-6">
             Aktivitet har aldri vært noe problem under oppveksten. Men var ikke
             før 18 års alderen, trening og gym ble interessant. Da startet min
             muskel og styrkebyggings era. I snart 6 år har jeg trent

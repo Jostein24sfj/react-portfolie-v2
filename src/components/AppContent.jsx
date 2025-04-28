@@ -77,8 +77,8 @@ export default function AppContent() {
         </p>
         <p className="text-lg">
           Jeg er i starten av min reise innen design og webutvikling, og jeg
-          liker godt å lære nye ting og utforske kreative og nye løsninger. Jeg
-          har begynt å bygge erfaring gjennom{" "}
+          liker å lære nye ting og utforske kreative og nye løsninger. Jeg har
+          begynt å bygge erfaring gjennom{" "}
           <a
             className="hover:text-[#1973e9] underline"
             target="_blank"

@@ -4,6 +4,11 @@ export default function Header() {
   const scrollToFooter = () => {
     document.getElementById("footer")?.scrollIntoView({ behavior: "smooth" });
   };
+
+  const scrollToAboutMe = () => {
+    document.getElementById("about-me")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <div
@@ -26,7 +31,9 @@ export default function Header() {
             </button>
           </Link>
 
-          <button className="text-base md:text-lg flex hover:scale-105 cursor-pointer">
+          <button
+            onClick={scrollToAboutMe}
+            className="text-base md:text-lg flex hover:scale-105 cursor-pointer">
             about me
           </button>
         </div>

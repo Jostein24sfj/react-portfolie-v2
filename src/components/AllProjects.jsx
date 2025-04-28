@@ -2,9 +2,9 @@ export default function AllProjects() {
   return (
     <div>
       <section className="text-white p-8 min-h-screen">
-        <h1 className="text-4xl font-bold mb-4 pb-18">All Projects</h1>
+        <h1 className="text-4xl font-bold mb-4 pb-8">All Projects</h1>
 
-        <section className="flex flex-col flex-wrap md:flex-row items-center justify-between pt-6 gap-10">
+        <section className="flex flex-col flex-wrap md:flex-row items-center justify-between pt-2 gap-10">
           <section className="flex flex-col w-96 md:w-86 h-74 rounded-xl p-6 bg-gradient-to-b from-black/40 to-zinc-800 from-85% hover:bg-zinc-800 border-zinc-400/20 border-2">
             <img
               className="flex rounded-xl"

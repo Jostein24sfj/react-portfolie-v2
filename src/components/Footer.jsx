@@ -13,7 +13,11 @@ export default function Footer() {
       <div id="footer">
         <div className="bg-zinc-800/50 p-12">
           <div className="flex justify-center items-center">
-            <FloatingDock items={footerItems} />
+            <FloatingDock
+              items={footerItems}
+              mobileClassName=""
+              desktopClassName=""
+            />
             <div className="flex flex-wrap justify-center gap-8 text-5xl">
               {/* <a
                 className="hover:text-yellow-300"
@@ -59,7 +63,7 @@ export default function Footer() {
               </a> */}
             </div>
           </div>
-          <div className="copyRightText flex justify-center pt-6 pb-6">
+          <div className="copyRightText flex justify-center pt-6">
             <p>
               &copy; {new Date().getFullYear()} Jostein Westrum. All rights
               reserved.

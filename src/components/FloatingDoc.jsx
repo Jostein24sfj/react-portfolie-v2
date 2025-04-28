@@ -51,6 +51,8 @@ const FloatingDockMobile = ({ items, className }) => {
                 }}
                 transition={{ delay: (items.length - 1 - idx) * 0.05 }}>
                 <a
+                  target="_blank"
+                  rel="noopener noreferrer"
                   href={item.href}
                   key={item.title}
                   className="flex h-14 w-14 items-center justify-center rounded-full bg-gray-50 dark:bg-neutral-900">
@@ -131,7 +133,7 @@ function IconContainer({ mouseX, title, icon, href }) {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <a href={href}>
+    <a target="_blank" rel="noopener noreferrer" href={href}>
       <motion.div
         ref={ref}
         style={{ width, height }}
