@@ -20,7 +20,12 @@ export default function AboutMe() {
     arrows: false,
   };
 
-  const images = ["/f10RollerShot.jpg", "/myF10Roller.jpg", "/myBmwE36.png"];
+  const images = [
+    "/f10RollerShot.jpg",
+    "/myF10Roller.jpg",
+    "/myBmwE36.png",
+    "/minF10Front.png",
+  ];
 
   return (
     <div className="flex flex-col gap-24">
