@@ -13,7 +13,7 @@ export default function Projects() {
         <div className="flex flex-col w-96 md:w-86 h-74 rounded-xl p-6 bg-gradient-to-b from-black/40 to-zinc-800 from-85% hover:bg-zinc-800 border-zinc-400/20 border-2">
           <img
             className="flex rounded-xl border-zinc-400/20 border-2 opacity-90"
-            src="/gymTracker.png"
+            src="/gymTracker.webp"
             alt="bilde av en gym nettside"
           />
           <a
